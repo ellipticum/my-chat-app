@@ -39,7 +39,7 @@ const Chat: React.FC = () => {
             )
             const data = await response.json()
             if (!data || !data.body) {
-                delay = 5000
+                delay = 200
             } else {
                 if (
                     data.body.typeWebhook === 'incomingMessageReceived' &&
